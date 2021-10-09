@@ -31,11 +31,13 @@ def unique_permutations(iterable, r=None):
 
 for p in unique_permutations([1,2,3], 2):
     new_arr = []
-    print(p)
     sum_per = sum(p)
-    print(sum_per)
     if sum_per % 3 == 0:
         print("this is multiple of 3")
     else:
         new_arr = new_arr + list(p)
+    
+
+    print(p)
+    print(sum_per)
     print(new_arr)
